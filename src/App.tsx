@@ -24,6 +24,8 @@ import AddClientsForm from "./pages/Clients/components/addCliennts";
 import FacebookAnalytics from "./pages/FacebookAnalytics/FacebookAnalytics";
 import Reports from "./pages/Reports/reports";
 import ComingSoon from "./pages/commingsoon/commingsoon";
+import FacebookCampaignAnalytics from "./pages/FacebookCampaignAnalytics/FacebookCampaignAnalytics";
+import FacebookAds from "./pages/FacebookCampaignAnalytics/FacebookAds/FacebookAds";
 
 // Protected Route Component
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -63,6 +65,9 @@ export default function App() {
             <Route path="/clients/add" element={<AddClientsForm />} />
 
             <Route path="/facebook-analytics" element={<FacebookAnalytics />} />
+
+            <Route path="/facebook-campaign-analytics" element={<FacebookCampaignAnalytics />} />
+            <Route path="/facebook-campaign-analytics/ads/:adId" element={<FacebookAds/>} />
 
             <Route path="/commingsoon" element={<ComingSoon />} />
 

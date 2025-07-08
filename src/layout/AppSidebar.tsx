@@ -51,7 +51,7 @@ const navItems: NavItem[] = [
     name: "Facebook Analytics",
     subItems: [
       { name: "Organic Analytics", path: "/facebook-analytics", pro: false },
-      { name: "Campaign Analytics", path: "/commingsoon", pro: false },
+      { name: "Campaign Analytics", path: "/facebook-campaign-analytics", pro: false },
     ],
   },
   {
